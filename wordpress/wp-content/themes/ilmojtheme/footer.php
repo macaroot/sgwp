@@ -1,3 +1,5 @@
+    </div><!-- /page content binder -->
+
     <footer class="site-footer">
 
         <?php
@@ -12,7 +14,7 @@
 
     </footer>
 
-</div><!-- /container -->
+</div><!-- /body container -->
 
 <!-- WordPress inserts default things e.g. for plugins -->
 <?php wp_footer(); ?>

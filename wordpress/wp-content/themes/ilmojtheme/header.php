@@ -10,16 +10,11 @@
 
     <body <?php body_class(); ?>>
 
-        <!-- container -->
+        <!-- body container -->
         <div class="container">
 
             <!-- site-header -->
             <header class="site-header">
-                <h1><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-                <h5><?php if (is_page( 'showroom' )) { ?>
-                    Portfolio.
-                    <?php } ?>
-                </h5>
 
                 <nav class="site-nav">
                     <?php
@@ -32,3 +27,6 @@
                 </nav>
 
             </header><!-- /site-header -->
+
+            <!-- page content binder -->
+            <div class="binder">

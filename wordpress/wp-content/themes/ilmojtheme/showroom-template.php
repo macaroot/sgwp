@@ -14,7 +14,9 @@ if ( $the_query->have_posts() ) :
     <article class="post showroom">
         <?php the_content(); ?>
     </article>
+    <div class="menu-buffer">
 
+    </div>
 <?php endwhile;
 
 else :
