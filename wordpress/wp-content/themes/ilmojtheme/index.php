@@ -1,10 +1,22 @@
-<?php get_header(); ?>
-<section id="content" role="main">
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<?php get_template_part( 'entry' ); ?>
-<?php comments_template(); ?>
-<?php endwhile; endif; ?>
-<?php get_template_part( 'nav', 'below' ); ?>
-</section>
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php
+
+get_header();
+
+if (have_posts()) :
+    while (have_posts()) : the_post(); ?>
+
+    <article class="post">
+        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+        <?php the_content(); ?>
+    </article>
+
+<?php endwhile;
+
+else :
+    echo ' <p>No content found</p> ';
+
+endif;
+
+get_footer();
+
+?>
