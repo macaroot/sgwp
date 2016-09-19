@@ -4,5 +4,7 @@ wordpress/wp-includes/
 wordpress/*.php
 wordpress/*.html
 wordpress/*.txt
+wordpress/.htaccess
 wordpress/wp-content/plugins/
+wordpress/wp-content/uploads
 wordpress/wp-content/themes/twentysixteen/

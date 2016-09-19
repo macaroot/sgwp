@@ -16,7 +16,10 @@
             <!-- site-header -->
             <header class="site-header">
                 <h1><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-                <h5><?php bloginfo( 'description' ) ?></h5>
+                <h5><?php if (is_page( 'showroom' )) { ?>
+                    Portfolio.
+                    <?php } ?>
+                </h5>
 
                 <nav class="site-nav">
                     <?php
@@ -24,7 +27,7 @@
                         'theme_location' => 'primary'
                     );
                      ?>
-                    <!-- Creates ul>li nav menu -->
+                    <!-- wp_nab_menu creates ul>li nav menu -->
                     <?php wp_nav_menu( $args ); ?>
                 </nav>
 

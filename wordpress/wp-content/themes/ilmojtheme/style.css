@@ -34,9 +34,11 @@ q:after {
     content:'';
     content: none;
 }
-table {
+table,
+img {
     border-collapse: collapse;
     border-spacing: 0;
+    border: none !important;
 }
 article,
 aside,
@@ -96,6 +98,34 @@ a {
 /* Header */
 
 /* Footer */
+
+/* Showroom */
+article.showroom div.gallery div.gallery-item {
+    width: 10em !important;
+    height: 10em !important;
+    position: relative;
+}
+article.showroom div.gallery div.gallery-item div.gallery-icon {
+    width: 10em !important;
+    height: 10em !important;
+    overflow: hidden;
+    z-index: 39;
+    position: absolute;
+}
+article.showroom div.gallery div.gallery-item div.gallery-caption {
+    width: 10em !important;
+    height: 10em !important;
+    overflow: hidden;
+    z-index: 40;
+    position: absolute;
+    top: 100%;
+}
+article.showroom div.gallery div.gallery-item div.portrait a img {
+    margin-top: -30%;
+}
+article.showroom div.gallery div.gallery-item div.landscape a img {
+    margin-left: -30%;
+}
 
 /* Navigation Menus */
 /* current-menu-item selector is provided by WordPress */
